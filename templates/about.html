@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>About</title>
+    <style>
+        h1{
+        font-family:Helvetica,sans-serif;
+
+        text-align:center;
+        background-color:#990011;
+        padding:5px;
+        color:white;
+        border-radius:5px;
+        }
+        div{
+        font-family:Helvetica,sans-serif;
+        font-size:15px;
+        justify-content:center;
+        align-items:center;
+        background-color:#FCF6F5;
+        margin:20px;
+        border-radius:20px;
+        }
+
+    </style>
+</head>
+<body style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
+<div style="width:100%; max-width:800px;padding:20px; font-size:20px">
+    <h1>About This Project <nav style="display:block; font-size:10px;"><a href="/" style="background-color:white;border-radius:5px; padding:2px">Home</a></nav></h1>
+
+    <p>This web applications predicts whether a person has heart disease or not based on medical data provided by the user</p>
+    <h3>Project Purpose</h3>
+    <p>This project is built to help individuals and medical professionals to identify the likelihood of heart disease in a patient. So by using medical data of patient the ML model can generate predictions and can be helpful in early diagnosis of <span style="border:2px solid #990011">Heart Disease.</span> and also helping in planning treatment.</p>
+    <h3>Dataset</h3>
+    <p>The dataset used to train the model is taken from <a href="https://archive.ics.uci.edu/dataset/45/heart+disease">UCI Machine Learning Repository</a> and has 14 features like age, chest pain type, heartrate, serum cholesterol and may more.</p>
+    <h3>Model Details</h3>
+    <p>The Prediction model that is used is a machine learning regression model built using python. Many algorithms were considered and evaluated like K-Neighbours algorithm, Randoom forest classifier and Logistic regression; In which the <span style="border:2px solid #990011" >Logistic Regression</span> model turned out to be best model of them all. Then Logistic Regression model was fine-tuned using RandomisedSearchCV.</p>
+    <h3>Features and Technologies</h3>
+    <p><ul><li><span style="font-weight:bold">Python</span>: The programming language used for developing model and web application.</li>
+    <li><span style="font-weight:bold">Flask:</span> A micro web framework used to develop web application. </li>
+    <li><span style="font-weight:bold">HTML and CSS:</span>Markup and Styling language used to develop interface.</li>
+    <li><span style="font-weight:bold">Scikit-Learn:</span> ML library used to develop algorithm for prediction.</li></ul>
+    <h3>How the app works:</h3>
+    <p>The app allows users to input their information through form. Then the information is passed through the server to the model and the model; where the model processes the data and the model generates prediction.</p>
+</div>
+
+</body>
+
+</html>
