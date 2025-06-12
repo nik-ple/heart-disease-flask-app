@@ -11,8 +11,9 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: url('PulsePrism img.png') no-repeat center center fixed;
-      background-size: cover;
+       background: url("{{ url_for('static', filename='images/pulseprism_banner.png') }}")
+                no-repeat center center fixed;
+    background-size: cover;
     }
 
     .hero {
