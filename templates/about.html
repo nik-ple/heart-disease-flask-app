@@ -1,48 +1,122 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>About</title>
-    <style>
-        h1{
-        font-family:Helvetica,sans-serif;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | PulsePrism</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #F7F8FA, #ffffff);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-        text-align:center;
-        background-color:#990011;
-        padding:5px;
-        color:white;
-        border-radius:5px;
-        }
-        div{
-        font-family:Helvetica,sans-serif;
-        font-size:15px;
-        justify-content:center;
-        align-items:center;
-        background-color:#FCF6F5;
-        margin:20px;
-        border-radius:20px;
-        }
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
 
-    </style>
+    header h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(to right, #C85179, #7F5AF0, #00D1D1, #FFD93D);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #0B2545;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 0 auto 40px;
+      padding: 30px;
+      border-radius: 12px;
+      background: #ffffffcc;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .section h2 {
+      color: #0B2545;
+      margin-bottom: 10px;
+    }
+
+    .section p,
+    .section li {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 20px;
+      background-color: #1B1F23;
+      color: #fff;
+    }
+  </style>
 </head>
-<body style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
-<div style="width:100%; max-width:800px;padding:20px; font-size:20px">
-    <h1>About This Project <nav style="display:block; font-size:10px;"><a href="/" style="background-color:white;border-radius:5px; padding:2px">Home</a></nav></h1>
+<body>
+  <header>
+    <h1>About PulsePrism</h1>
+    <p>Multi-Angle Assessment of Cardiac Wellness</p>
+  </header>
 
-    <p>This web applications predicts whether a person has heart disease or not based on medical data provided by the user</p>
-    <h3>Project Purpose</h3>
-    <p>This project is built to help individuals and medical professionals to identify the likelihood of heart disease in a patient. So by using medical data of patient the ML model can generate predictions and can be helpful in early diagnosis of <span style="border:2px solid #990011">Heart Disease.</span> and also helping in planning treatment.</p>
-    <h3>Dataset</h3>
-    <p>The dataset used to train the model is taken from <a href="https://archive.ics.uci.edu/dataset/45/heart+disease">UCI Machine Learning Repository</a> and has 14 features like age, chest pain type, heartrate, serum cholesterol and may more.</p>
-    <h3>Model Details</h3>
-    <p>The Prediction model that is used is a machine learning regression model built using python. Many algorithms were considered and evaluated like K-Neighbours algorithm, Randoom forest classifier and Logistic regression; In which the <span style="border:2px solid #990011" >Logistic Regression</span> model turned out to be best model of them all. Then Logistic Regression model was fine-tuned using RandomisedSearchCV.</p>
-    <h3>Features and Technologies</h3>
-    <p><ul><li><span style="font-weight:bold">Python</span>: The programming language used for developing model and web application.</li>
-    <li><span style="font-weight:bold">Flask:</span> A micro web framework used to develop web application. </li>
-    <li><span style="font-weight:bold">HTML and CSS:</span>Markup and Styling language used to develop interface.</li>
-    <li><span style="font-weight:bold">Scikit-Learn:</span> ML library used to develop algorithm for prediction.</li></ul>
-    <h3>How the app works:</h3>
-    <p>The app allows users to input their information through form. Then the information is passed through the server to the model and the model; where the model processes the data and the model generates prediction.</p>
-</div>
+  <main>
+  <section class="section">
+    <h2>🎯 Why I Built PulsePrism</h2>
+    <p>PulsePrism started with a simple goal: make early heart disease detection more accessible. Not everyone has immediate access to healthcare, but most people have access to the internet. So I asked myself — what if I could offer a meaningful prediction based on basic clinical data, right from your browser?</p>
+    <p>I wanted a tool that didn’t scare people, but informed them. Something clean, data-driven, and trustworthy.</p>
+  </section>
 
+  <section class="section">
+    <h2>📊 The Dataset That Powers It</h2>
+    <p>PulsePrism is built on the Cleveland Heart Disease dataset — a real, medically validated dataset used by researchers for decades. It includes 14 features like age, cholesterol, blood pressure, chest pain type, and more. I cleaned the data, removed inconsistencies, and scaled it for model input so it performs well without biasing on any single metric.</p>
+  </section>
+
+  <section class="section">
+    <h2>🧠 What the Model Does (and Why We Chose It)</h2>
+    <p>I tried various algorithms — KNN, Random Forest, Decision Trees. But Logistic Regression stood out. Not only did it deliver high accuracy (87.1%), it was also interpretable. That mattered to me, because I didn’t want users to get “black box” results.</p>
+    <p>Using techniques like RandomizedSearchCV, I tweaked the parameters and got strong performance on recall and AUC. That means it doesn’t just predict well — it actually helps detect real risks.</p>
+  </section>
+
+  <section class="section">
+    <h2>🚀 Tech Stack</h2>
+    <p>Everything runs inside a Flask app, wrapped in Docker for deployment. The ML model is exposed via REST API. I host it on Render, and every Git commit can trigger a redeploy automatically.</p>
+    <ul>
+      <li><strong>Python & Flask</strong> – For model backend</li>
+      <li><strong>Scikit-learn</strong> – Core ML toolkit</li>
+      <li><strong>Docker</strong> – Portability & consistency</li>
+      <li><strong>Render</strong> – Hosting the live version</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>👥 Who It’s For</h2>
+    <p>I built this for students, developers, clinicians, and even curious individuals. You don’t need to be a data scientist or a doctor — if you can read your health reports, you can use PulsePrism.</p>
+    <p>Just remember, it’s a guide, not a diagnosis. Always follow up with a real doctor. But if PulsePrism makes you ask one more important question about your heart, I’ve done my job.</p>
+  </section>
+</main>
+
+  <footer>
+    &copy; 2025 PulsePrism — Multi-Angle Assessment of Cardiac Wellness by Nikhil Palande
+  </footer>
 </body>
-
 </html>

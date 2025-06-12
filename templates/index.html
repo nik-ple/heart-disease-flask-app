@@ -1,59 +1,131 @@
-<html xmlns:color="http://www.w3.org/1999/xhtml">
+<!-- Enhanced index.html with detailed, sophisticated content -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Heart Disease Prediction Model</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulsePrism | Multi-Angle Assessment of Cardiac Wellness</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('PulsePrism img.png') no-repeat center center fixed;
+      background-size: cover;
+    }
 
-        body{
-        margin: 0;
-        padding:0;
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        justify-content:center;
-        background-color:white;
-        font-family: Helvetica,sans-serif;
-        color:black;
-        }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 80px 20px 60px;
+      background-color: rgba(255, 255, 255, 0.85);
+    }
 
-        h1{
-        margin: 0;
-        padding:0;
-        font-family: Helvetica,sans-serif;
-        background-color:#990011;
-        text-align: center;
-        color: white;
-        border-radius: 15px;}
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      background: linear-gradient(to right, #C85179, #7F5AF0, #00D1D1, #FFD93D);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-    </style>
+    .hero p {
+      max-width: 700px;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #0B2545;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: #00D1D1;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #40C057;
+    }
+
+    .sections {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 40px;
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .card {
+      background-color: #ffffff;
+      max-width: 1000px;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h2 {
+      color: #0B2545;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #444;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-top: 1em;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 20px;
+      background-color: #1B1F23;
+      color: #fff;
+    }
+  </style>
 </head>
-
 <body>
+  <header class="hero">
+    <h1>PulsePrism</h1>
+    <p>Multi-Angle Assessment of Cardiac Wellness</p>
+    <a href="/model"><button class="btn">Try the Predictor</button></a>
+  </header>
 
-<div style=" font-size: 20px; background-color: #FCF6F5; color: black; border-radius:20px; margin: 20px; box_shadow:0 8px 4px black; padding: 20px 120px 50px;">
-    <h1>Heart Disease Prediction Model</h1>
-    <h3>What is heart disease?</h3>
-Heart disease is a variety of issues that can affect your heart. When people think about heart disease, they often think of the most common type — <span style="border: 2px solid #990011">coronary artery disease (CAD)</span> and the heart attacks it can cause. But you can have trouble with different parts of your heart, like your heart muscle, valves or electrical system.
-
-When your heart isn’t working well, it has trouble sending enough blood, oxygen and nutrients to your body. In a way, your heart delivers the fuel that keeps your body’s systems running. If there’s a problem with delivering that fuel, it affects everything your body’s systems do.
-
-Lifestyle changes and medications can keep your heart healthy and lower your chances of getting heart disease.
-
-    <h3 style="text-align: center;">What are the types of heart disease?</h3>
-    <ol style="color: white; border: 1px solid #990011 ; border-radius: 15px; padding: 10px 120px 20px;margin-top: 10px;background-color: #990011;">
-        <h4>Heart disease types include:</h4>
-        <li>Narrowing of your heart’s blood vessels because of fatty deposits (coronary artery disease).</li>
-        <li>Abnormal heart rhythms (arrhythmias).</li>
-        <li>Heart valve diseases.</li>
-        <li>Abnormal heart muscle (cardiomyopathy).</li>
-        <li>Heart squeezing and relaxation difficulties (heart failure).</li>
-        <li>Heart issues you have at birth (congenital heart disease).</li>
-        <li>Issues with the fluid-filled sac surrounding your heart (pericardium).</li></ol>
-    <div style="display: flex;justify-content: center;align-items: center;">
-        <a href="/model">
-            <button style="font-family: Helvetica,sans-serif; color:white; background-color:#990011;padding:1.25em;border-radius:10px">Try Model</button>
-        </a>
+  <section class="sections">
+    <div class="card">
+      <h2>Understanding Heart Disease</h2>
+      <p>Cardiovascular disease remains the leading cause of death globally. It encompasses a spectrum of conditions affecting the heart and blood vessels, ranging from coronary artery blockages and arrhythmias to congenital anomalies and valve dysfunctions.</p>
+      <p>Despite its widespread impact, many individuals remain undiagnosed until symptoms become severe. PulsePrism addresses this gap by offering a data-driven preliminary assessment using non-invasive clinical indicators—empowering users with foresight before crisis strikes.</p>
+      <p>Early detection isn't just about extending life—it’s about preserving quality of life, minimizing medical costs, and enabling timely lifestyle adjustments. PulsePrism bridges the gap between clinical complexity and public accessibility.</p>
     </div>
 
-</div>
+    <div class="card">
+      <h2>Inside the PulsePrism Engine</h2>
+      <p>At its core, PulsePrism leverages a fine-tuned Logistic Regression model trained on the UCI Cleveland dataset. The data undergoes rigorous preprocessing: missing values are imputed, continuous features are normalized using robust scalers, and categorical variables are one-hot encoded to retain dimensional integrity.</p>
+      <p>Model selection involved benchmarking Random Forests, K-Nearest Neighbors, and Gradient Boosting alongside Logistic Regression. The final model was chosen based on ROC-AUC performance, interpretability, and consistency under k-fold cross-validation. Hyperparameters were optimized through RandomizedSearchCV, resulting in a model that balances recall and precision with 87.1% accuracy and a 0.89 F1 score.</p>
+      <p>The system is deployed as a Flask-based RESTful API, containerized using Docker for consistent environment replication and scalable deployment via cloud platforms. Render hosts the app with CI/CD pipelines triggered via GitHub Actions, ensuring reliability and fast iteration cycles.</p>
+    </div>
+
+    <div class="card">
+      <h2>Who Should Use PulsePrism?</h2>
+      <p>PulsePrism is designed for a wide spectrum of users: individuals tracking their heart health, clinicians seeking a second-opinion screening tool, and researchers exploring clinical ML applications. Its intuitive interface ensures usability for non-technical users, while the backend architecture satisfies technical reliability standards expected in healthcare-adjacent tools.</p>
+      <p>Medical students can use PulsePrism to simulate real-world case evaluations. Hospitals and clinics can incorporate it into electronic medical records for triaging low-risk and high-risk patients. Health-tech enthusiasts can deploy it on custom dashboards, integrating wellness monitoring with wearable data.</p>
+      <p>Most importantly, PulsePrism puts actionable insight in the hands of users who need it most—early, accessible, and interpretable.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 PulsePrism — Multi-Angle Assessment of Cardiac Wellness
+  </footer>
 </body>
 </html>

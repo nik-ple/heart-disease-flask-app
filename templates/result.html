@@ -1,25 +1,110 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Result</title>
-    <style>
-        body{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        margin:0;
-        padding:0;
-        display:flex;
-        flex-direction:column;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prediction Result | PulsePrism</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #F7F8FA, #ffffff);
+    }
 
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(to right, #C85179, #7F5AF0, #00D1D1, #FFD93D);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #0B2545;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    .result-card {
+      background: #ffffffcc;
+      max-width: 700px;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .result-box {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #7F5AF0;
+      margin: 20px 0;
+    }
+
+    .btn {
+      background: #00D1D1;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #40C057;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 20px;
+      background-color: #1B1F23;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-<div style="padding:30px; margin-top:50px; border-radius:10px; display:flex; flex-direction:column; justify-items:center; align-items:center; background-color:#FCF6F5; color:black; max-width:800px">
-    <h1 style="color:#990011; border-radius:10px; padding:10px;font-family:Helvetica,sans-serif;">Model Prediction</h1>
-    <p style="font-family:Helvetica,sans-serif; font-size:20px">The predicted likelihood of disease is:<span style="background-color:#990011; color:white; padding:5px;border-radius:5px">{{ prediction }}</span></p>
-    <a style="align-items:center;" href="/"><button style="background-color:#990011;color:white;border-radius:10px;padding:5px;">Home</button></a>
-</div>
+  <header class="hero">
+    <h1>Prediction Result</h1>
+    <p>Your personalized assessment for heart disease risk is shown below.</p>
+  </header>
+
+  <main>
+    <div class="result-card">
+      <div class="result-box">{{ prediction }}</div>
+      <a href="/" class="btn">Return to Homepage</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 PulsePrism — Multi-Angle Assessment of Cardiac Wellness
+  </footer>
 </body>
 </html>
