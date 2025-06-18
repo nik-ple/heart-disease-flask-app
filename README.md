@@ -126,5 +126,5 @@ PulsePrism is available under the MIT License. Feel free to use, modify, and sha
 ---
 
 <p align="center">
-  <img src="static/images/pulseprism_logo.png" alt="PulsePrism Logo" width="100" />
+  <img src="static/images/PulsePrism img.png" alt="PulsePrism Logo" width="100" />
 </p>
