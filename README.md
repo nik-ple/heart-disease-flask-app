@@ -1,5 +1,7 @@
 # PulsePrism
-
+<p align="center">
+  <img src="static/images/PulsePrism img.png" alt="PulsePrism Logo" width="1000" />
+</p>
 **Multi‑Angle Assessment of Cardiac Wellness**
 
 PulsePrism turns basic clinical numbers into an instant risk estimate—no sign‑up, no downloads. You enter your values, and our model (trained on the UCI Cleveland dataset) returns “Heart Disease” or “No Heart Disease” with a confidence percentage, all in under a second.
@@ -125,6 +127,4 @@ PulsePrism is available under the MIT License. Feel free to use, modify, and sha
 
 ---
 
-<p align="center">
-  <img src="static/images/PulsePrism img.png" alt="PulsePrism Logo" width="100" />
-</p>
+
